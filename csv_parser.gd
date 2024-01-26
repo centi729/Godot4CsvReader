@@ -7,7 +7,6 @@ func _ready():
 
 func csv_parser():
 	var file = FileAccess.open("res://data.csv", FileAccess.READ)
-	var content = file.get_as_text()
 	
 	while file.get_position() < file.get_length():
 		var data = Array(file.get_csv_line())
